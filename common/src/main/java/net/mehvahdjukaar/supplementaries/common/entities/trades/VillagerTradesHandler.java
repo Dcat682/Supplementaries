@@ -42,7 +42,7 @@ public class VillagerTradesHandler {
             trades.add(itemForEmeraldTrade(ModRegistry.COPPER_LANTERN.get(), 1, 1, 12));
         }
         if (RegistryConfigs.BOMB_ENABLED.get()) {
-            trades.add(itemForEmeraldTrade(ModRegistry.BOMB_ITEM.get(), 1, 3, 8));
+            trades.add(itemForEmeraldTrade(ModRegistry.BOMB_ITEM.get(), 1, 32, 2));
             if (CompatHandler.oreganized) {
                 trades.add(itemForEmeraldTrade(ModRegistry.BOMB_SPIKY_ITEM.get(), 1, 4, 8));
             }
@@ -58,7 +58,7 @@ public class VillagerTradesHandler {
             trades.add(itemForEmeraldTrade(stack, 4, 6));
         }
         if (RegistryConfigs.BOMB_ENABLED.get()) {
-            trades.add(itemForEmeraldTrade(ModRegistry.BOMB_BLUE_ITEM.get(), 1, ModRegistry.BOMB_ITEM.get(), 1, 40, 3));
+            trades.add(itemForEmeraldTrade(ModRegistry.BOMB_BLUE_ITEM.get(), 1, ModRegistry.BOMB_ITEM.get(), 1, 64, 1));
 
         }
         RED_MERCHANT_TRADES = trades.toArray(new VillagerTrades.ItemListing[0]);
